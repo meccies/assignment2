@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float playerSpeed;
+    public float playerSpeed = 5;
     public Transform position;
     
     void Start()
@@ -17,6 +17,11 @@ public class PlayerMovement : MonoBehaviour
 
         Vector3 move = new Vector3(h,0,v);
         transform.Translate(move * playerSpeed * Time.deltaTime);
+        
+        if (Input.GetKey(KeyCode.W))
+        {
+            move += Vector3.forward;
+        }
 
     }
 }
