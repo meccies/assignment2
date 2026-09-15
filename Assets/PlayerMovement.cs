@@ -17,11 +17,6 @@ public class PlayerMovement : MonoBehaviour
 
         Vector3 move = new Vector3(h,0,v);
         transform.Translate(move * playerSpeed * Time.deltaTime);
-        
-        if (Input.GetKey(KeyCode.W))
-        {
-            move += Vector3.forward;
-        }
-
+      
     }
 }
