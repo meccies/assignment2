@@ -2685,6 +2685,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2033346593}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!1 &893174939 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6990968523678289367, guid: b27a7552cb7b1324ba750b6850eb5c36, type: 3}
+  m_PrefabInstance: {fileID: 1135543955}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &893174940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 893174939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a918cb7bdfd7db4195881848c9566a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WinPositionCheck
+  target: {fileID: 649247908}
+  goal: {fileID: 678075717}
+  winDistance: 2
+  hasWon: 0
 --- !u!1 &911197039
 GameObject:
   m_ObjectHideFlags: 0
@@ -3407,7 +3428,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6990968523678289367, guid: b27a7552cb7b1324ba750b6850eb5c36, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 893174940}
   m_SourcePrefab: {fileID: 100100000, guid: b27a7552cb7b1324ba750b6850eb5c36, type: 3}
 --- !u!1 &1182846865
 GameObject:

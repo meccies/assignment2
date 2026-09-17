@@ -2,15 +2,32 @@ using UnityEngine;
 
 public class WinPositionCheck : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public Transform target;
+    public Transform goal;
+    public float winDistance = 2;
+
+    public bool hasWon = false;
+
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        if (hasWon) return;
+        float distance = Vector3.Distance(target.position, goal.position);
+
+        if (distance <= winDistance)
+        {
+            hasWon = true;
+            WinGame();
+        }
+    }
+
+    void WinGame()
+    {
+        Debug.Log("You Won!");
     }
 }
+// Note to self: attach this script to Player GameObject
